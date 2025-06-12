@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvDate" type="id" />
+    <item name="tvAmountPerEmployee" type="id" />
+    <item name="tvTotalAmount" type="id" />
+    <item name="textViewEmployeeNames" type="id" />
+    <item name="buttonIncreaseEmployees" type="id" />
+    <item name="buttonDecreaseEmployees" type="id" />
+    <item name="textViewEmployeeNumber" type="id" />
+    <item name="layoutEmployeeNames" type="id" />
+    <item name="recyclerViewTips" type="id" />
+    <item name="amountLayout" type="id" />
+</resources>
