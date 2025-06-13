@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PropinasApp</string>
+
+<string name="add_tip">Agregar Propina</string>
+<string name="calculate">Calcular</string>
+<string name="cancel">Cancelar</string>
+<string name="tip_amount">Introduce la cantidad de la propina en euros</string>
+<string name="total_amount">Total: %1$.2f €</string>
+<string name="employee_count">Número de empleados: %1$d</string>
+<string name="amount_per_employee">Cantidad por empleado: %1$.2f €</string>
+<string name="add_tip_success">Propina agregada</string>
+<string name="add_tip_error">Ingresa una cantidad válida</string>
+<string name="add_tip_empty">Ingresa una cantidad</string>
+<string name="no_tips">Agrega al menos una propina</string>
 </resources>
