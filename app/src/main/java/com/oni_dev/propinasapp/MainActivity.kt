@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var historyButton: MaterialButton
     private lateinit var tipHistoryManager: TipHistoryManager
     private lateinit var textViewEnteredAmount: TextView
-    private lateinit var textViewRemainingBudget: TextView
+    //private lateinit var textViewRemainingBudget: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         calculateButton = findViewById(R.id.calculateButton)
         historyButton = findViewById(R.id.historyButton)
         textViewEnteredAmount = findViewById(R.id.textViewEnteredAmount)
-        textViewRemainingBudget = findViewById(R.id.textViewRemainingBudget)
+        //textViewRemainingBudget = findViewById(R.id.textViewRemainingBudget)
     }
 
     private fun setupClickListeners() {
@@ -95,10 +95,10 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun updateBudgetDisplay() {
+   private fun updateBudgetDisplay() {
         lifecycleScope.launch {
             val remainingBudget = tipHistoryManager.getRemainingBudget()
-            textViewRemainingBudget.text = "Presupuesto restante: %.2f €".format(remainingBudget)
+            //textViewRemainingBudget.text = "Presupuesto restante: %.2f €".format(remainingBudget)
         }
     }
 

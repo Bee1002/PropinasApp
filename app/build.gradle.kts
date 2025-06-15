@@ -63,6 +63,9 @@ dependencies {
     // Gson
     implementation ("com.google.code.gson:gson:2.10.1")
 
+    // Snackbar
+    implementation ("com.google.android.material:material:1.11.0") // o la última versión
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

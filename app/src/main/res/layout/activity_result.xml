@@ -13,12 +13,12 @@
         android:textSize="18sp"
         android:text="Monto: 0.0" />
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textViewTipAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="Propina: 0.0" />
+        android:text="Propina: 0.0" />-->
 
     <TextView
         android:id="@+id/textViewTotalAmount"

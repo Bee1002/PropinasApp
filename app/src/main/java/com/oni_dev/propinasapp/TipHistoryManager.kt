@@ -12,7 +12,7 @@ class TipHistoryManager private constructor(private val context: Context) {
     private val tipRecordDao: TipRecordDao
     private var initialBudget: Double = 10000.0 // Presupuesto inicial de 10,000
     private var currentBudget: Double = initialBudget
-    private val tipPercentage: Double = 0.05 // 5% de propina
+    private val tipPercentage: Double = 0.00 // 5% de propina
 
     init {
         database = Room.databaseBuilder(

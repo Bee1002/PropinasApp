@@ -40,7 +40,7 @@
         android:textColor="@android:color/holo_blue_dark"
         android:layout_marginBottom="16dp"/>
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textViewRemainingBudget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_dark"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"/>-->
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/calculateButton"

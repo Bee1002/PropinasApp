@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.snackbar.Snackbar
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -67,7 +68,17 @@ class TipHistoryAdapter(
             }
 
             buttonDelete.setOnClickListener {
-                onDeleteClick(record)
+                val context = itemView.context
+                android.app.AlertDialog.Builder(context).apply {
+                    setTitle("Confirmar eliminación")
+                    setMessage("¿Estás seguro de que deseas eliminar este registro de propina?")
+                    setPositiveButton("Sí") { _, _ ->
+                        onDeleteClick(record)
+                        Snackbar.make(itemView, "Registro eliminado", Snackbar.LENGTH_SHORT).show()
+                    }
+                    setNegativeButton("Cancelar", null)
+                    show()
+                }
             }
         }
     }

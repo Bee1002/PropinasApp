@@ -43,12 +43,12 @@ class ResultActivity : AppCompatActivity() {
         val tipAmount = intent.getDoubleExtra("tipAmount", 0.0)
 
         val textViewAmount = findViewById<TextView>(R.id.textViewAmount)
-        val textViewTipAmount = findViewById<TextView>(R.id.textViewTipAmount)
+        //val textViewTipAmount = findViewById<TextView>(R.id.textViewTipAmount)
         val textViewTotalAmount = findViewById<TextView>(R.id.textViewTotalAmount)
         val buttonSave = findViewById<Button>(R.id.buttonSave)
 
         textViewAmount.text = "Monto: $amount"
-        textViewTipAmount.text = "Propina: $tipAmount"
+        //textViewTipAmount.text = "Propina: $tipAmount"
         textViewTotalAmount.text = "Total: ${amount + tipAmount}"
 
         buttonSave.setOnClickListener {
@@ -56,7 +56,7 @@ class ResultActivity : AppCompatActivity() {
                 val record = TipRecord(
                     date = Date(),
                     totalAmount = amount + tipAmount,
-                    employeeCount = 1, // Por defecto, puedes ajustar según necesites
+                    employeeCount = 1,  // Por defecto, puedes ajustar según necesites
                     amountPerEmployee = (amount + tipAmount) / 1,
                     employeeNames = listOf("Empleado 1") // Por defecto, puedes ajustar según necesites
                 )
@@ -124,8 +124,7 @@ class ResultActivity : AppCompatActivity() {
     private fun initializeEmployeeNames() {
         employeeNames.clear()
         val defaultNames = listOf(
-            "Juan", "María", "Carlos", "Ana", "Pedro",
-            "Laura", "Miguel", "Sofía", "Diego", "Elena"
+            "Alejandra", "Laura", "Sofia", "Yolanda"
         )
         employeeNames.addAll(defaultNames)
     }
